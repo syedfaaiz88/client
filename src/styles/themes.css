@@ -1,0 +1,15 @@
+/* Default Theme */
+.theme-light {
+    --color-primary: 30, 144, 255; /* DodgerBlue */
+    --color-secondary: 255, 99, 71; /* Tomato */
+    --color-background: 255, 255, 255; /* White */
+    --color-text: 0, 0, 0; /* Black */
+}
+
+/* Dark Theme */
+.theme-dark {
+    --color-primary: 255, 107, 129; /* Light Red */
+    --color-secondary: 30, 144, 255; /* DodgerBlue */
+    --color-background: 18, 18, 18; /* Dark */
+    --color-text: 255, 255, 255; /* White */
+}
