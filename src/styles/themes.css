@@ -1,15 +1,194 @@
-/* Default Theme */
+/* Light Theme */ 
 .theme-light {
-    --color-primary: 30, 144, 255; /* DodgerBlue */
-    --color-secondary: 255, 99, 71; /* Tomato */
-    --color-background: 255, 255, 255; /* White */
-    --color-text: 0, 0, 0; /* Black */
+    /* Base Colors */
+    --color-background: rgb(255, 255, 255); /* White */
+    --color-text: rgb(0, 0, 0); /* Black */
+
+    /* Card & Containers */
+    --color-card: rgb(240, 240, 240); /* Light Gray */
+    --color-card-border: rgb(200, 200, 200); /* Gray Border */
+    
+    /* Buttons */
+    --color-button-primary: rgb(66, 133, 244); /* Blue */
+    --color-button-secondary: rgb(134, 134, 134); /* Gray */
+    --color-button-hover-primary: rgb(52, 120, 229); /* Darker Blue */
+    --color-button-hover-secondary: rgb(161, 161, 161); /* Darker Blue */
+    --color-button-border-primary: rgb(1, 61, 158); /* Blue */
+    --color-button-border-secondary: rgb(104, 104, 104); /* Gray */
+    --color-button-text: #ffffff;
+
+    /* Forms & Inputs */
+    --color-input-background: rgb(250, 250, 250); /* Light Input */
+    --color-input-border: rgb(200, 200, 200); /* Input Border */
+    --color-input-focus: rgb(66, 133, 244); /* Focus Blue */
+
+    /* Borders & Dividers */
+    --color-border: rgb(211, 211, 211); /* Light Gray */
+    
+    /* Links */
+    --color-link: rgb(26, 115, 232); /* Google Blue */
+    --color-link-hover: rgb(22, 100, 200); /* Darker Blue */
+
+    /* Notifications & Status */
+    --color-success: rgb(60, 186, 84); /* Green */
+    --color-warning: rgb(251, 188, 5); /* Yellow */
+    --color-error: rgb(234, 67, 53); /* Red */
 }
 
 /* Dark Theme */
 .theme-dark {
-    --color-primary: 255, 107, 129; /* Light Red */
-    --color-secondary: 30, 144, 255; /* DodgerBlue */
-    --color-background: 18, 18, 18; /* Dark */
-    --color-text: 255, 255, 255; /* White */
+    /* Base Colors */
+    --color-background: rgb(29, 29, 29); /* Dark */
+    --color-text: rgb(255, 255, 255); /* White */
+
+    /* Primary UI Elements */
+    --color-primary: rgb(102, 178, 255); /* Light Blue */
+    --color-secondary: rgb(255, 221, 51); /* Soft Yellow */
+    --color-accent: rgb(255, 99, 71); /* Tomato */
+
+    /* Card & Containers */
+    --color-card: rgb(44, 44, 44); /* Dark Gray */
+    --color-card-border: rgb(80, 80, 80); /* Darker Border */
+
+    /* Buttons */
+    --color-button-primary: rgb(0, 68, 136); /* Light Blue */
+    --color-button-secondary: rgb(82, 82, 82); /* Medium Gray */
+    --color-button-hover-primary: rgb(0, 85, 165); /* Darker Blue */
+    --color-button-hover-secondary: rgb(102, 102, 102); /* Darker Blue */
+    --color-button-border-primary: rgb(0, 80, 209); /* Blue */
+    --color-button-border-secondary: rgb(158, 158, 158); /* Gray */
+    --color-button-text: #ffffff;
+
+    /* Forms & Inputs */
+    --color-input-background: rgb(40, 40, 40); /* Dark Input */
+    --color-input-border: rgb(80, 80, 80); /* Dark Border */
+    --color-input-focus: rgb(83, 83, 83); /* Light Blue */
+
+    /* Borders & Dividers */
+    --color-border: rgb(60, 60, 60); /* Dark Gray */
+
+    /* Links */
+    --color-link: rgb(102, 178, 255); /* Light Blue */
+    --color-link-hover: rgb(85, 165, 240); /* Darker Blue */
+
+    /* Notifications & Status */
+    --color-success: rgb(102, 255, 102); /* Bright Green */
+    --color-warning: rgb(255, 221, 51); /* Soft Yellow */
+    --color-error: rgb(255, 99, 71); /* Tomato */
+}
+
+/* Solarized Light Theme */
+.theme-solarized-light {
+    --color-background: #fdf6e3;
+    --color-text: #657b83;
+    --color-primary: #268bd2;
+    --color-secondary: #b58900;
+    --color-accent: #dc322f;
+    --color-card: #eee8d5;
+    --color-card-border: #93a1a1;
+
+    --color-button-primary: #268bd2;
+    --color-button-secondary: #586e75;
+    --color-button-hover-primary: #579ed1;
+    --color-button-hover-secondary: #76959e;
+    --color-button-border-primary: #005da0;
+    --color-button-border-secondary: #3f4646;
+    --color-button-text: #c9e3f5;
+
+    --color-input-background: #fdf6e3;
+    --color-input-border: #93a1a1;
+    --color-input-focus: #268bd2;
+    --color-border: #93a1a1;
+    --color-link: #268bd2;
+    --color-link-hover: #1f77b4;
+    --color-success: #859900;
+    --color-warning: #b58900;
+    --color-error: #dc322f;
+}
+
+/* Forest Theme */
+.theme-forest {
+    --color-background: #2e4a32;
+    --color-text: #e8f5e9;
+    --color-primary: #388e3c;
+    --color-secondary: #a1887f;
+    --color-accent: #ff9800;
+    --color-card: #3a5a40;
+    --color-card-border: #607d8b;
+    
+    --color-button-primary: #2e7d32;
+    --color-button-secondary: #6d4c41;
+    --color-button-hover-primary: #338a38;
+    --color-button-hover-secondary: #7c574a;
+    --color-button-border-primary: #619163;
+    --color-button-border-secondary: #947f78;
+    --color-button-text: #f6ffc0;
+
+    --color-input-background: #4e6b50;
+    --color-input-border: #607d8b;
+    --color-input-focus: #388e3c;
+    --color-border: #607d8b;
+    --color-link: #66bb6a;
+    --color-link-hover: #43a047;
+    --color-success: #4caf50;
+    --color-warning: #ff9800;
+    --color-error: #e53935;
+}
+
+/* Cyberpunk Theme */
+.theme-cyberpunk {
+    --color-background: #000;
+    --color-text: #ff0099;
+    --color-primary: #00ffcc;
+    --color-secondary: #ffcc00;
+    --color-accent: #ff0033;
+    --color-card: #121212;
+    --color-card-border: #ff00ff;
+
+    --color-button-primary: #00cc99;
+    --color-button-secondary: #ff0099;
+    --color-button-hover-primary: #00ffcc;
+    --color-button-hover-secondary: #fc2ca9;
+    --color-button-border-primary: #00ffcc;
+    --color-button-border-secondary: #ff00ff;
+    --color-button-text: #000000;
+
+    --color-input-background: #1a1a1a;
+    --color-input-border: #ff00ff;
+    --color-input-focus: #00ffcc;
+    --color-border: #ff00ff;
+    --color-link: #00ffcc;
+    --color-link-hover: #00cc99;
+    --color-success: #00ff00;
+    --color-warning: #ffcc00;
+    --color-error: #ff0033;
+}
+
+/* Dracula Theme */
+.theme-dracula {
+    --color-background: #282a36;
+    --color-text: #f8f8f2;
+    --color-primary: #bd93f9;
+    --color-secondary: #ff79c6;
+    --color-accent: #50fa7b;
+    --color-card: #44475a;
+    --color-card-border: #6272a4;
+
+    --color-button-primary: #8f3eff;
+    --color-button-secondary: #fd4bb0;
+    --color-button-hover-primary: #975afa;
+    --color-button-hover-secondary: #fc68bc;
+    --color-button-border-primary: #b786fc;
+    --color-button-border-secondary: #fc8bcb;
+    --color-button-text: #000000;
+
+    --color-input-background: #44475a;
+    --color-input-border: #6272a4;
+    --color-input-focus: #bd93f9;
+    --color-border: #6272a4;
+    --color-link: #bd93f9;
+    --color-link-hover: #a370f7;
+    --color-success: #50fa7b;
+    --color-warning: #ffb86c;
+    --color-error: #ff5555;
 }

@@ -22,7 +22,11 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const html = document.documentElement;
 
-    html.classList.remove("theme-light", "theme-dark");
+    html.classList.forEach((cls) => {
+      if (cls.startsWith("theme-")) {
+        html.classList.remove(cls);
+      }
+    });
     html.classList.add(`theme-${theme}`);
 
     localStorage.setItem("theme", theme);
