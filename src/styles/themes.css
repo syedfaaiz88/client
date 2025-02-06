@@ -80,12 +80,12 @@
 /* Solarized Light Theme */
 .theme-solarized-light {
     --color-background: #fdf6e3;
-    --color-text: #657b83;
+    --color-text: #445358;
     --color-primary: #268bd2;
     --color-secondary: #b58900;
     --color-accent: #dc322f;
     --color-card: #eee8d5;
-    --color-card-border: #93a1a1;
+    --color-card-border: #6e7979;
 
     --color-button-primary: #268bd2;
     --color-button-secondary: #586e75;
@@ -93,7 +93,7 @@
     --color-button-hover-secondary: #76959e;
     --color-button-border-primary: #005da0;
     --color-button-border-secondary: #3f4646;
-    --color-button-text: #c9e3f5;
+    --color-button-text: #e0ebf3;
 
     --color-input-background: #fdf6e3;
     --color-input-border: #93a1a1;
@@ -111,7 +111,7 @@
     --color-background: #2e4a32;
     --color-text: #e8f5e9;
     --color-primary: #388e3c;
-    --color-secondary: #a1887f;
+    --color-secondary: #c5b9b4;
     --color-accent: #ff9800;
     --color-card: #3a5a40;
     --color-card-border: #607d8b;
@@ -127,7 +127,7 @@
     --color-input-background: #4e6b50;
     --color-input-border: #607d8b;
     --color-input-focus: #388e3c;
-    --color-border: #607d8b;
+    --color-border: #5c7460;
     --color-link: #66bb6a;
     --color-link-hover: #43a047;
     --color-success: #4caf50;

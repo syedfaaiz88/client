@@ -1,6 +1,7 @@
 import { Theme } from "../constants/theme.constants";
 import { useTheme } from "../context/ThemeContext";
 import { useState } from "react";
+import Button from "./Reusable/Button";
 
 /**
  * Theme Chooser Component
@@ -30,21 +31,21 @@ const ThemeChooser = () => {
   return (
     <div className="relative">
       {/* Dropdown Button */}
-      <button
-        className="p-2 rounded-lg bg-card text-text flex items-center gap-2"
+      <Button
+        primary
         onClick={toggleDropdown}
       >
         🎨 {theme.charAt(0).toUpperCase() + theme.slice(1)} Theme
-      </button>
+      </Button>
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="absolute mt-2 w-48 bg-card border border-border rounded-lg shadow-lg z-50">
+        <div className="space-y-1 w-32 p-1 absolute text-sm mt-2 bg-card border border-border rounded-lg shadow-lg z-50 overflow-hidden">
           {themes.map((t) => (
             <button
               key={t}
-              className={`block w-full text-left p-2 hover:bg-button-hover ${
-                theme === t ? "font-bold" : ""
+              className={`block w-full text-left py-1 px-2 hover:bg-button-hover-primary rounded ${
+                theme === t ? "bg-button-hover-primary" : ""
               }`}
               onClick={() => selectTheme(t)}
             >

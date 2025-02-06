@@ -1,6 +1,11 @@
+import LandingPage from "./components/LandingPage";
+import Layout from "./components/Layout/Layout";
+
 function App() {
   return (
-    <div>Syed Faaiz</div>
+    <div className="bg-background text-text">
+      <Layout element={<LandingPage/>}/>
+    </div>
   );
 }
 
