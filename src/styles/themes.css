@@ -9,12 +9,12 @@
     --color-card-border: rgb(200, 200, 200); /* Gray Border */
     
     /* Buttons */
-    --color-button-primary: rgb(66, 133, 244); /* Blue */
-    --color-button-secondary: rgb(134, 134, 134); /* Gray */
-    --color-button-hover-primary: rgb(52, 120, 229); /* Darker Blue */
-    --color-button-hover-secondary: rgb(161, 161, 161); /* Darker Blue */
-    --color-button-border-primary: rgb(1, 61, 158); /* Blue */
-    --color-button-border-secondary: rgb(104, 104, 104); /* Gray */
+    --color-button-primary: rgb(0, 111, 223); /* Light Blue */
+    --color-button-secondary: rgb(139, 139, 139); /* Medium Gray */
+    --color-button-hover-primary: rgb(0, 126, 245); /* Darker Blue */
+    --color-button-hover-secondary: rgb(150, 150, 150); /* Darker Blue */
+    --color-button-border-primary: rgb(0, 80, 209); /* Blue */
+    --color-button-border-secondary: rgb(122, 122, 122); /* Gray */
     --color-button-text: #ffffff;
 
     /* Forms & Inputs */
@@ -56,7 +56,7 @@
     --color-button-hover-primary: rgb(0, 85, 165); /* Darker Blue */
     --color-button-hover-secondary: rgb(102, 102, 102); /* Darker Blue */
     --color-button-border-primary: rgb(0, 80, 209); /* Blue */
-    --color-button-border-secondary: rgb(158, 158, 158); /* Gray */
+    --color-button-border-secondary: rgb(122, 122, 122); /* Gray */
     --color-button-text: #ffffff;
 
     /* Forms & Inputs */
@@ -191,4 +191,88 @@
     --color-success: #50fa7b;
     --color-warning: #ffb86c;
     --color-error: #ff5555;
+}
+
+.theme-nord {
+    --color-background: #2e3440;
+    --color-text: #d8dee9;
+    --color-primary: #81a1c1;
+    --color-secondary: #88c0d0;
+    --color-accent: #bf616a;
+    --color-card: #3b4252;
+    --color-card-border: #4c566a;
+
+    --color-button-primary: #5e81ac;
+    --color-button-secondary: #434c5e;
+    --color-button-hover-primary: #6b90c6;
+    --color-button-hover-secondary: #526175;
+    --color-button-border-primary: #4c78a3;
+    --color-button-border-secondary: #586273;
+    --color-button-text: #eceff4;
+
+    --color-input-background: #4c566a;
+    --color-input-border: #5e81ac;
+    --color-input-focus: #81a1c1;
+    --color-border: #434c5e;
+    --color-link: #88c0d0;
+    --color-link-hover: #81a1c1;
+    --color-success: #a3be8c;
+    --color-warning: #ebcb8b;
+    --color-error: #bf616a;
+}
+
+.theme-oceanic {
+    --color-background: #001f3f;
+    --color-text: #f0f8ff;
+    --color-primary: #0074cc;
+    --color-secondary: #1aa7ec;
+    --color-accent: #ff6b6b;
+    --color-card: #003366;
+    --color-card-border: #005fa3;
+
+    --color-button-primary: #0077b6;
+    --color-button-secondary: #00a6fb;
+    --color-button-hover-primary: #0096c7;
+    --color-button-hover-secondary: #02c9f1;
+    --color-button-border-primary: #005fa3;
+    --color-button-border-secondary: #0083d6;
+    --color-button-text: #f0f8ff;
+
+    --color-input-background: #002855;
+    --color-input-border: #004488;
+    --color-input-focus: #00b4d8;
+    --color-border: #005fa3;
+    --color-link: #00b4d8;
+    --color-link-hover: #48cae4;
+    --color-success: #52b788;
+    --color-warning: #ffd166;
+    --color-error: #ef476f;
+}
+
+.theme-autumn {
+    --color-background: #4b2e2e;
+    --color-text: #f5e6ca;
+    --color-primary: #d08770;
+    --color-secondary: #eab676;
+    --color-accent: #bf616a;
+    --color-card: #5a3d3d;
+    --color-card-border: #8f5f5f;
+
+    --color-button-primary: #cd6d38;
+    --color-button-secondary: #a45c40;
+    --color-button-hover-primary: #b45e30;
+    --color-button-hover-secondary: #8a4f38;
+    --color-button-border-primary: #a84d20;
+    --color-button-border-secondary: #75422f;
+    --color-button-text: #f5e6ca;
+
+    --color-input-background: #6d4c41;
+    --color-input-border: #8f5f5f;
+    --color-input-focus: #d08770;
+    --color-border: #a45c40;
+    --color-link: #d08770;
+    --color-link-hover: #b35d3b;
+    --color-success: #8fbc8f;
+    --color-warning: #e9c46a;
+    --color-error: #d62828;
 }
