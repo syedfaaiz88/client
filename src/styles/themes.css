@@ -3,13 +3,12 @@
     /* Base Colors */
     --color-background: rgb(255, 255, 255); /* White */
     --color-text: rgb(0, 0, 0); /* Black */
-
     /* Card & Containers */
     --color-card: rgb(240, 240, 240); /* Light Gray */
     --color-card-border: rgb(200, 200, 200); /* Gray Border */
     
     /* Buttons */
-    --color-button-primary: rgb(0, 111, 223); /* Light Blue */
+    --color-button-primary: rgb(0, 115, 230); /* Light Blue */
     --color-button-secondary: rgb(139, 139, 139); /* Medium Gray */
     --color-button-hover-primary: rgb(0, 126, 245); /* Darker Blue */
     --color-button-hover-secondary: rgb(150, 150, 150); /* Darker Blue */

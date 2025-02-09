@@ -17,7 +17,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
  */
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const storedTheme = (typeof window !== "undefined" && localStorage.getItem("theme")) as Theme | null;
-  const [theme, setTheme] = useState<Theme>(storedTheme || "light");
+  const [theme, setTheme] = useState<Theme>(storedTheme || "dark");
 
   useEffect(() => {
     const html = document.documentElement;

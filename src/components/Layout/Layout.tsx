@@ -1,31 +1,25 @@
 import { ReactNode } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ThemeChooser from "../ThemeChooser";
 
-function Layout({ element }: { element: ReactNode}) {
+function Layout({ element }: { element: ReactNode }) {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen bg-background text-text">
       {/* Header */}
       <Navbar />
 
-      {/* Main layout with sidebar and content */}
-      <div className="flex flex-row h-full overflow-hidden">
-        {/* Sidebar */}
-        <div className="hidden md:block">
-          {/* <Sidebar items={items} bgColor={'bg-gray-100'}/> */}
-        </div>
-
+      {/* Main layout */}
+      <div className="flex-1 overflow-hidden">
         {/* Content area */}
-        <div className="flex-1 overflow-y-auto">
-          <div className="flex flex-col justify-between">
-            {/* Main content */}
-            <main className="min-h-screen">{element}</main>
-
-            {/* Footer */}
-            <Footer />
-          </div>
-        </div>
+        <main>{element}</main>
       </div>
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Theme Chooser */}
+      <ThemeChooser />
     </div>
   );
 }
