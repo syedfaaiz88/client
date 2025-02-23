@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction, createAsyncThunk } from "@reduxjs/toolkit";
 import { AuthService } from "../../service/authService";
 import { LoginPayload, RegisterPayload, User } from "../../types/auth.types";
+import { addToast } from "./toasterSlice";
 
 // Auth State Type
 interface AuthState {
@@ -22,12 +23,10 @@ const initialState: AuthState = {
 
 export const registerUser = createAsyncThunk(
   "auth/register",
-  async (
-    data: RegisterPayload,
-    { rejectWithValue }
-  ) => {
+  async (data: RegisterPayload, { rejectWithValue }) => {
     try {
-      return await AuthService.register(data);
+      const response = await AuthService.register(data);
+      return response.data;
     } catch (error: any) {
       return rejectWithValue(error);
     }
@@ -37,13 +36,30 @@ export const registerUser = createAsyncThunk(
 // Login User
 export const loginUser = createAsyncThunk(
   "auth/login",
-  async (
-    data: LoginPayload,
-    { rejectWithValue }
-  ) => {
+  async (data: LoginPayload, { dispatch, rejectWithValue }) => {
     try {
-      return await AuthService.login(data);
+      const response = await AuthService.login(data);
+        dispatch(
+          addToast({
+            message: response.data.message,
+            type: response.data.success ? "success" : "error",
+            duration: 3000,
+            position: "top-right",
+          })
+        );
+      localStorage.setItem("accessToken", response.data.accessToken);
+      localStorage.setItem("refreshToken", response.data.refreshToken);
+      return response.data;
     } catch (error: any) {
+      console.log(error)
+      dispatch(
+        addToast({
+          message: error.response?.data?.reason || "Error logging in!",
+          type: "info",
+          duration: 3000,
+          position: "top-right",
+        })
+      );
       return rejectWithValue(error);
     }
   }

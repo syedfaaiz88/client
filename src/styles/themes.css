@@ -1,17 +1,23 @@
-/* Light Theme */ 
+/* Light Theme */
 .theme-light {
     /* Base Colors */
     --color-background: rgb(255, 255, 255); /* White */
     --color-text: rgb(0, 0, 0); /* Black */
+
+    /* Primary UI Elements */
+    --color-primary: rgb(0, 115, 230); /* Light Blue */
+    --color-secondary: rgb(139, 139, 139); /* Medium Gray */
+    --color-accent: rgb(234, 67, 53); /* Red */
+
     /* Card & Containers */
     --color-card: rgb(240, 240, 240); /* Light Gray */
     --color-card-border: rgb(200, 200, 200); /* Gray Border */
-    
+
     /* Buttons */
     --color-button-primary: rgb(0, 115, 230); /* Light Blue */
     --color-button-secondary: rgb(139, 139, 139); /* Medium Gray */
     --color-button-hover-primary: rgb(0, 126, 245); /* Darker Blue */
-    --color-button-hover-secondary: rgb(150, 150, 150); /* Darker Blue */
+    --color-button-hover-secondary: rgb(150, 150, 150); /* Darker Gray */
     --color-button-border-primary: rgb(0, 80, 209); /* Blue */
     --color-button-border-secondary: rgb(122, 122, 122); /* Gray */
     --color-button-text: #ffffff;
@@ -23,7 +29,7 @@
 
     /* Borders & Dividers */
     --color-border: rgb(211, 211, 211); /* Light Gray */
-    
+
     /* Links */
     --color-link: rgb(26, 115, 232); /* Google Blue */
     --color-link-hover: rgb(22, 100, 200); /* Darker Blue */
@@ -32,7 +38,9 @@
     --color-success: rgb(60, 186, 84); /* Green */
     --color-warning: rgb(251, 188, 5); /* Yellow */
     --color-error: rgb(234, 67, 53); /* Red */
+    --color-info: rgb(26, 115, 232);
 }
+
 
 /* Dark Theme */
 .theme-dark {
@@ -74,6 +82,7 @@
     --color-success: rgb(102, 255, 102); /* Bright Green */
     --color-warning: rgb(255, 221, 51); /* Soft Yellow */
     --color-error: rgb(255, 99, 71); /* Tomato */
+    --color-info: rgb(102, 178, 255);
 }
 
 /* Solarized Light Theme */
@@ -103,6 +112,7 @@
     --color-success: #859900;
     --color-warning: #b58900;
     --color-error: #dc322f;
+    --color-info: #268bd2;
 }
 
 /* Forest Theme */
@@ -132,6 +142,7 @@
     --color-success: #4caf50;
     --color-warning: #ff9800;
     --color-error: #e53935;
+    --color-info: #66bb6a;
 }
 
 /* Cyberpunk Theme */
@@ -161,6 +172,7 @@
     --color-success: #00ff00;
     --color-warning: #ffcc00;
     --color-error: #ff0033;
+    --color-info: #00ffcc;
 }
 
 /* Dracula Theme */
@@ -190,6 +202,7 @@
     --color-success: #50fa7b;
     --color-warning: #ffb86c;
     --color-error: #ff5555;
+    --color-info: #bd93f9;
 }
 
 .theme-nord {
@@ -218,6 +231,7 @@
     --color-success: #a3be8c;
     --color-warning: #ebcb8b;
     --color-error: #bf616a;
+    --color-info: #81a1c1;
 }
 
 .theme-oceanic {
@@ -246,6 +260,7 @@
     --color-success: #52b788;
     --color-warning: #ffd166;
     --color-error: #ef476f;
+    --color-info: #3390ed;
 }
 
 .theme-autumn {
@@ -274,4 +289,5 @@
     --color-success: #8fbc8f;
     --color-warning: #e9c46a;
     --color-error: #d62828;
+    --color-info: #de7a52;
 }

@@ -12,16 +12,15 @@ import Card from "../Reusable/Card";
 const Login: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const { loading, error } = useSelector((state: RootState) => state.auth);
-
   const [form, setForm] = useState({
     email: "",
     password: "",
     device_id: getDeviceId(),
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    dispatch(loginUser(form));
+    await dispatch(loginUser(form)).unwrap();
   };
 
   return (

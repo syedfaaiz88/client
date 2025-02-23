@@ -45,6 +45,7 @@ export default {
         'success': 'var(--color-success)',
         'warning': 'var(--color-warning)',
         'error': 'var(--color-error)',
+        'info': 'var(--color-info)',
       },
     },
   },
