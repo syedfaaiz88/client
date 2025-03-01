@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../redux/store";
 import { fetchProfile } from "../../redux/slices/profileSlice";
 import { Loader } from "../../assets/Loader";
+import LanguageChooser from "../LanguageChooser";
 
 function Layout({ element }: { element: ReactNode }) {
   const dispatch = useDispatch<AppDispatch>();
@@ -36,6 +37,7 @@ function Layout({ element }: { element: ReactNode }) {
 
       {/* Theme Chooser */}
       <ThemeChooser />
+      <LanguageChooser />
     </div>
   );
 }

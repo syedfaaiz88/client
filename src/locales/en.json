@@ -1,0 +1,10 @@
+{
+  "login": "Login",
+  "signup": "Sign Up",
+  "dont_have_account": "Don't have an account? Register",
+  "already_registered": "Already registered? Log in",
+  "copyright": "© 2024 . All rights reserved.",
+  "email": "Email",
+  "password": "Password",
+  "full_name": "Full Name"
+}

@@ -85,35 +85,6 @@
     --color-info: rgb(102, 178, 255);
 }
 
-/* Solarized Light Theme */
-.theme-solarized-light {
-    --color-background: #fdf6e3;
-    --color-text: #445358;
-    --color-primary: #268bd2;
-    --color-secondary: #b58900;
-    --color-accent: #dc322f;
-    --color-card: #eee8d5;
-    --color-card-border: #6e7979;
-
-    --color-button-primary: #268bd2;
-    --color-button-secondary: #586e75;
-    --color-button-hover-primary: #579ed1;
-    --color-button-hover-secondary: #76959e;
-    --color-button-border-primary: #005da0;
-    --color-button-border-secondary: #3f4646;
-    --color-button-text: #e0ebf3;
-
-    --color-input-background: #fdf6e3;
-    --color-input-border: #93a1a1;
-    --color-input-focus: #268bd2;
-    --color-border: #93a1a1;
-    --color-link: #268bd2;
-    --color-link-hover: #1f77b4;
-    --color-success: #859900;
-    --color-warning: #b58900;
-    --color-error: #dc322f;
-    --color-info: #268bd2;
-}
 
 /* Forest Theme */
 .theme-forest {
@@ -139,41 +110,13 @@
     --color-border: #5c7460;
     --color-link: #66bb6a;
     --color-link-hover: #43a047;
+
     --color-success: #4caf50;
     --color-warning: #ff9800;
     --color-error: #e53935;
     --color-info: #66bb6a;
 }
 
-/* Cyberpunk Theme */
-.theme-cyberpunk {
-    --color-background: #000;
-    --color-text: #ff0099;
-    --color-primary: #00ffcc;
-    --color-secondary: #ffcc00;
-    --color-accent: #ff0033;
-    --color-card: #121212;
-    --color-card-border: #ff00ff;
-
-    --color-button-primary: #00cc99;
-    --color-button-secondary: #ff0099;
-    --color-button-hover-primary: #00ffcc;
-    --color-button-hover-secondary: #fc2ca9;
-    --color-button-border-primary: #00ffcc;
-    --color-button-border-secondary: #ff00ff;
-    --color-button-text: #000000;
-
-    --color-input-background: #1a1a1a;
-    --color-input-border: #ff00ff;
-    --color-input-focus: #00ffcc;
-    --color-border: #ff00ff;
-    --color-link: #00ffcc;
-    --color-link-hover: #00cc99;
-    --color-success: #00ff00;
-    --color-warning: #ffcc00;
-    --color-error: #ff0033;
-    --color-info: #00ffcc;
-}
 
 /* Dracula Theme */
 .theme-dracula {
@@ -199,6 +142,7 @@
     --color-border: #6272a4;
     --color-link: #bd93f9;
     --color-link-hover: #a370f7;
+
     --color-success: #50fa7b;
     --color-warning: #ffb86c;
     --color-error: #ff5555;
@@ -228,6 +172,7 @@
     --color-border: #434c5e;
     --color-link: #88c0d0;
     --color-link-hover: #81a1c1;
+
     --color-success: #a3be8c;
     --color-warning: #ebcb8b;
     --color-error: #bf616a;
@@ -257,6 +202,7 @@
     --color-border: #005fa3;
     --color-link: #00b4d8;
     --color-link-hover: #48cae4;
+
     --color-success: #52b788;
     --color-warning: #ffd166;
     --color-error: #ef476f;
@@ -286,6 +232,7 @@
     --color-border: #a45c40;
     --color-link: #d08770;
     --color-link-hover: #b35d3b;
+
     --color-success: #8fbc8f;
     --color-warning: #e9c46a;
     --color-error: #d62828;

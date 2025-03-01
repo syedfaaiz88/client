@@ -55,7 +55,7 @@ export const loginUser = createAsyncThunk(
       dispatch(
         addToast({
           message: error.response?.data?.reason || "Error logging in!",
-          type: "info",
+          type: "error",
           duration: 3000,
           position: "top-right",
         })

@@ -6,7 +6,7 @@ import { removeToast } from "../../redux/slices/toasterSlice";
 const ToasterContainer: React.FC = () => {
   const dispatch = useDispatch();
   const toasts = useSelector((state: RootState) => state.toaster.toasts);
-  
+
   useEffect(() => {
     const timers = toasts.map((toast) =>
       setTimeout(() => {
@@ -24,15 +24,25 @@ const ToasterContainer: React.FC = () => {
       {toasts.map((toast) => (
         <div
           key={toast.id}
-          className={`flex items-center px-4 py-3 rounded-md shadow-md cursor-pointer transition-all duration-300
-          ${toast.type === "success" ? "bg-success text-white" : ""}
-          ${toast.type === "error" ? "bg-error text-white" : ""}
-          ${toast.type === "warning" ? "bg-warning text-black" : ""}
-          ${toast.type === "info" ? "bg-info text-white" : ""}
+          className={`relative flex items-center justify-between px-4 py-3 rounded-md shadow-md transition-all duration-300
+          ${toast.type === "success" ? "bg-success" : ""}
+          ${toast.type === "error" ? "bg-error" : ""}
+          ${toast.type === "warning" ? "bg-warning" : ""}
+          ${toast.type === "info" ? "bg-info" : ""}
           `}
-          onClick={() => dispatch(removeToast(toast.id))}
         >
           <span className="text-sm font-medium">{toast.message}</span>
+
+          {/* Close Button */}
+          <button
+            className="ml-4 text-xl font-bold leading-none focus:outline-none transition"
+            onClick={(e) => {
+              e.stopPropagation(); // Prevent triggering the parent onClick
+              dispatch(removeToast(toast.id));
+            }}
+          >
+            ×
+          </button>
         </div>
       ))}
     </div>
