@@ -6,5 +6,8 @@
   "copyright": "© 2024 . Todos los derechos reservados.",
   "email": "Correo electrónico",
   "password": "Contraseña",
-  "full_name": "Nombre completo"
+  "full_name": "Nombre completo",
+  "forgot_password?": "¿Olvidaste tu contraseña?",
+  "forgot_password": "Olvidé mi contraseña",
+  "reset_password": "Restablecer contraseña"
 }

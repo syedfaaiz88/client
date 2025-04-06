@@ -49,9 +49,9 @@ export const loginUser = createAsyncThunk(
         );
       localStorage.setItem("accessToken", response.data.accessToken);
       localStorage.setItem("refreshToken", response.data.refreshToken);
+      localStorage.setItem("user", JSON.stringify(response.data.user));
       return response.data;
     } catch (error: any) {
-      console.log(error)
       dispatch(
         addToast({
           message: error.response?.data?.reason || "Error logging in!",

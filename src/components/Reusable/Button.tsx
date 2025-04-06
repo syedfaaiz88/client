@@ -36,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({
     buttonClasses += " border-none bg-transparent text-link underline";
 
   // Disabled styles
-  if (disabled) {
+  if (disabled || isLoading) {
     buttonClasses += " opacity-50 cursor-not-allowed ";
   }
 

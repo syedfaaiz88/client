@@ -1,37 +1,21 @@
-import { ReactNode, useEffect } from "react";
+import { ReactNode } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ThemeChooser from "../ThemeChooser";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../../redux/store";
-import { fetchProfile } from "../../redux/slices/profileSlice";
-import { Loader } from "../../assets/Loader";
 import LanguageChooser from "../LanguageChooser";
+import { User } from "../../types/auth.types";
 
 function Layout({ element }: { element: ReactNode }) {
-  const dispatch = useDispatch<AppDispatch>();
-  const { loading, user } = useSelector((state: RootState) => state.profile);
-
-  useEffect(() => {
-    dispatch(fetchProfile());
-  }, []);
+  const user: User = JSON.parse(localStorage.getItem("user")!)
 
   return (
     <div className="flex flex-col h-screen bg-background text-text">
       {/* Header */}
-      <Navbar user={user!} loading={loading} />
-
-      {/* Main layout */}
-      {loading ? (
-        <div className="flex-1 flex justify-center items-center">
-          {loading ? <Loader /> : <main className="w-full">{element}</main>}
-        </div>
-      ) : (
+      <Navbar user={user} />
         <div className="flex-1 overflow-hidden">
           {/* Content area */}
           <main>{element}</main>
         </div>
-      )}
       {/* Footer */}
       <Footer />
 
